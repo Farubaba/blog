@@ -4,8 +4,6 @@ date: 2018-07-11 01:13:40
 tags:
 ---
 
-### How To Create GitHub Pages With Hexo
-
 #### Guide
 
 #### 全面官方文档
