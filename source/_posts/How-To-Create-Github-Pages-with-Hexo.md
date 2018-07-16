@@ -60,6 +60,10 @@ more info: [hexo-theme-next]
 
 	git clone https://github.com/ahonn/hexo-theme-even themes/even
 	
+##### Add Comments
+
+[add comments]
+
 #### 超链接
 
 [github-help-all]:https://help.github.com/
@@ -67,3 +71,4 @@ more info: [hexo-theme-next]
 [jekyll-guide]:https://jekyllrb.com/docs/home/
 [customizing-github-pages]:https://help.github.com/categories/customizing-github-pages/
 [hexo-theme-next]:https://github.com/iissnan/hexo-theme-next
+[add comments]:https://widgetpack.com/
