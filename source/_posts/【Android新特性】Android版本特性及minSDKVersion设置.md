@@ -8,8 +8,11 @@ tags:
 
 
 		推荐：minSDKVersion=17 
-		推荐：提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。
-		
+		推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。
+      
+        如果想要减小apk大小：
+        推荐：提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。		
+        
 		下面内容是详细分析过程。
 		
 		
@@ -35,23 +38,21 @@ tags:
 |7.0|24 Nougat|2|[android-7.0-changes]||
 |6.0|23 Marshmallow |3|[android-6.0-changes]|Runtime Permission|
 |5.1|22 Lollipop |2|[android-5.1]||
-|5.0|21 Lollipop |2|[android-5.0-changes]|1.ART、自动Multidex  2.Instant Run <br>3.支持 vector drawables|
+|5.0|21 Lollipop |2|[android-5.0-changes]|1.ART、自动Multidex <br> 2.Instant Run <br>3.支持 vector drawables|
 |4.4W|20 KitKat Wear|2|||
-|4.4|19 KitKat |4|[android-4.4]|Android 4.4 (API level 20) and lower doesn't support vector drawables, but can use Support Library.If you want to use vector drawables only, you can use <font color="red">Android Support Library 23.2 or higher,Android Plugin for Gradle 2.0 or higher</font> The <code>VectorDrawableCompat</code> class in the Support Library allows you to support VectorDrawable in <font color="red">Android 2.1 (API level 7) and higher.</font> [android-support-library-232]|
+|4.4|19 KitKat |4|[android-4.4]|Android 4.4 (API level 20) and lower doesn't support vector drawables,but can use Support Library.If you want to use vector drawables only,you can use <font color="red">Android Support Library 23.2 or higher,Android Plugin for Gradle 2.0 or higher</font> The <code>VectorDrawableCompat</code> class in the Support Library allows you to support VectorDrawable in <font color="red">Android 2.1 (API level 7) and higher.</font> [android-support-library-232]|
 |4.3|18 Jelly Bean|3|[android-4.3]|1.webp lossless compress & transparent alpha channel support|
 |4.2|17 Jelly Bean |3|[android-4.2]|强制@JavascriptInterface|
 |4.1|16 Jelly Bean |5|[android-4.1]||
 |4.0.3|15 IcecreamSandwich|5|[android-4.0.3]||
 |4.0|14 IcecreamSandwich|4|[android-4.0]|Webp lossy compress [convert images to webp]|
-|3.2|13 HoneyComb|1|[android-3.2]| WebP file format for your images, when targeting Android 3.2 (API level 13) and higher|
+|3.2|13 HoneyComb|1|[android-3.2]| WebP file format for your images,  <br> when targeting Android 3.2 (API level 13) and higher|
 |3.1|12 HoneyComb|3|[android-3.1]||
 |3.0|11 HoneyComb|2|[android-3.0]||
 |2.3.3|10 Gingerbread|2|[android-2.3.3]||
 |2.3|9 Gingerbread|2|[android-2.3]||
 |2.2|8 Froyo |3|[android-2.2]||
-|2.1|7 Eclair |3|[android-2.1]||
-
-
+|2.1|7 Eclair |3|[android-2.1]|...|
 
 #### 三、Android各系统版本占有率分布
 
@@ -110,20 +111,21 @@ tags:
 #### 八、结论
 
 ##### 1、设置minSDKVersion=17
->1. Android 4.2及以上版本已经覆盖96%的机型。
->2. 微信采用minSDKVersion=17，最小支持到android 4.2版本，我们有理由设想，使用我们应用的用户，一定会使用微信，所以和微信采用相同minSDKVersion即可。
->3. 支付宝minSDKVersion=18，携程minSDKVersion=19，我们采用17不会有问题。
+
+1. Android 4.2及以上版本已经覆盖96%的机型。
+2. 微信采用minSDKVersion=17，最小支持到android 4.2版本，我们有理由设想，使用我们应用的用户，一定会使用微信，所以和微信采用相同minSDKVersion即可。
+3. 支付宝minSDKVersion=18，携程minSDKVersion=19，我们采用17不会有问题。
 
 #### 2、图片适配屏幕密度xhdpi
-> 1. 大部分的设备属于xhdpi屏幕密度范围,xxhdpi设备也有相当保有量。
-> 2. 分辨率太低的图片，在高密度设备下会被放大儿变模糊，hdpi中的图片会在xhdpi和xxhdpi设备中变得模糊，所以不采用hdpi来适配。
-> 3. 分辨率太高的图片，android系统缩放时消耗过多内存，例如xxhdpi中的图片再xhdpi和hdpi设备上，会被缩小，分辨率越高，占用内存越多，所以也不适合使用xxhdpi来适配。
-> 4. 大部分的设备属于xhdpi屏幕密度范围，我们只提供xhdpi一套图片即可完成图片适配。这样在面对hdpi和xxhdpi的设备时候，性能和显示清晰度都可以做到不错。
+
+1. 大部分的设备属于xhdpi屏幕密度范围,xxhdpi设备也有相当保有量。
+2. 分辨率太低的图片，在高密度设备下会被放大儿变模糊，hdpi中的图片会在xhdpi和xxhdpi设备中变得模糊，所以不采用hdpi来适配。
+3. 分辨率太高的图片，android系统缩放时消耗过多内存，例如xxhdpi中的图片再xhdpi和hdpi设备上，会被缩小，分辨率越高，占用内存越多，所以也不适合使用xxhdpi来适配。
+4. 大部分的设备属于xhdpi屏幕密度范围，我们只提供xhdpi一套图片即可完成图片适配。这样在面对hdpi和xxhdpi的设备时候，性能和显示清晰度都可以做到不错。
 
 <font color="red">推荐：minSDKVersion = 17</font></br>
-<font color="red">推荐：想要缩小apk 体积，则提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。
-
-官方推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。如下图
+<font color="red">推荐：想要缩小apk 体积，则提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。</font>
+<font color="red">官方推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。如下图
 </font>
 ![图片适配xxhdpi](http://upload-images.jianshu.io/upload_images/6322932-89d993c158f0125b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

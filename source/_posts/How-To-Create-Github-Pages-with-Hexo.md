@@ -50,9 +50,20 @@ $ hexo deploy
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
 
+##### Add Theme "next"
+
+	git clone --branch v5.1.2 https://github.com/iissnan/hexo-theme-next themes/next
+
+more info: [hexo-theme-next]
+
+##### Add Theme "even"
+
+	git clone https://github.com/ahonn/hexo-theme-even themes/even
+	
 #### 超链接
 
 [github-help-all]:https://help.github.com/
 [github-pages-guide]:https://help.github.com/categories/github-pages-basics/
 [jekyll-guide]:https://jekyllrb.com/docs/home/
 [customizing-github-pages]:https://help.github.com/categories/customizing-github-pages/
+[hexo-theme-next]:https://github.com/iissnan/hexo-theme-next
