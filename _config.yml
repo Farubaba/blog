@@ -5,7 +5,7 @@
 # Site
 title: Farubaba
 subtitle: 人生总是柳暗花明，只怕你停了脚步，丧了意志！
-description: des人生总是柳暗花明，只怕你停了脚步，丧了意志！
+description: 人生总是柳暗花明，只怕你停了脚步，丧了意志！
 keywords: Android
 author: Farubaba
 language:
@@ -76,10 +76,14 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 
 #theme: landscape
-theme: next
+#theme: next
 #theme: even
 #theme: a-rsnippet
 #theme: again
+#theme: aircloud
+#theme: bootstrap-blog
+#theme: cactus-white
+theme: cactus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
