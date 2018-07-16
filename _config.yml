@@ -76,10 +76,10 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 
 #theme: landscape
-#theme: next
+theme: next
 #theme: even
 #theme: a-rsnippet
-theme: again
+#theme: again
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
