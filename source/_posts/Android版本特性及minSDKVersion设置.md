@@ -4,8 +4,6 @@ date: 2018-07-15 19:47:20
 tags:
 ---
 
-### Android版本特性及minSDKVersion设置
-
 
 		推荐：minSDKVersion=17 
 		推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。
@@ -16,7 +14,7 @@ tags:
 		下面内容是详细分析过程。
 		
 		
-#### 一、参考资料
+### 一、参考资料
 [Android dashboards]  
 
 		minSDKVersion理解:
@@ -29,7 +27,7 @@ tags:
 		那么android系统会阻止app安装。始终应该设置minSDKVersion。
 
 
-#### 二、Android系统版本特性
+### 二、Android系统版本特性
 |系统版本号|版本名称sdkVersion|Revision|版本特性|关键特性|
 |-----|-----|-----|----|----|
 ||27|1|||
@@ -54,25 +52,25 @@ tags:
 |2.2|8 Froyo |3|[android-2.2]||
 |2.1|7 Eclair |3|[android-2.1]|...|
 
-#### 三、Android各系统版本占有率分布
+### 三、Android各系统版本占有率分布
 
-##### 1、实时数据参考：[Android dashboards]    
+#### 1、实时数据参考：[Android dashboards]    
 
 
 ![Android Platform Version Percent](http://upload-images.jianshu.io/upload_images/6322932-b814708f69f28120.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### 2、Android Studio中创建项目时提供参考数据    
+#### 2、Android Studio中创建项目时提供参考数据    
 
 ![Android系统版本分布](http://upload-images.jianshu.io/upload_images/6322932-6a2811470cd8a4ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-#### 四、Android现有设备屏幕密度分布
-##### 1、实时数据参考：[Android dashboards]  
+### 四、Android现有设备屏幕密度分布
+#### 1、实时数据参考：[Android dashboards]  
 
 ![Android现有设备屏幕密度分布](http://upload-images.jianshu.io/upload_images/6322932-3c5ac8a7f5a19fc0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-#### 五、Android屏幕密度及代表分辨率
+### 五、Android屏幕密度及代表分辨率
 
 |密度类型|代表分辨率（px）|屏幕密度（dpi）|换算(px/dp)|比例|
 |----|----|----|----|----|
@@ -82,12 +80,12 @@ tags:
 | 超高密度<font color="red">（xhdpi） </font>| <font color="red">720x1280</font> | 320|1dp=2px|8|
 | 超超高密度（xxhdpi） | 1080x1920 | 480 |1dp=3px|12|
 
-#### 六、OpenGL 版本支持
+### 六、OpenGL 版本支持
 
 ![OpenGL版本支持](http://upload-images.jianshu.io/upload_images/6322932-fb082a2bb4321371.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-#### 七、主流App支持minSdkVersion
+### 七、主流App支持minSdkVersion
 |应用|Andriod最低版本|minSdkVersion|统计日期|
 |----|----|----|----|
 |携程|4.4.4|<font color="red">19</font>|2018-02-11|
@@ -108,9 +106,9 @@ tags:
 |天猫|4.0.3|15|2018-02-11|
 |淘宝|4.0.3|15|2018-02-11|
 
-#### 八、结论
+### 八、结论
 
-##### 1、设置minSDKVersion=17
+#### 1、设置minSDKVersion=17
 
 1. Android 4.2及以上版本已经覆盖96%的机型。
 2. 微信采用minSDKVersion=17，最小支持到android 4.2版本，我们有理由设想，使用我们应用的用户，一定会使用微信，所以和微信采用相同minSDKVersion即可。
