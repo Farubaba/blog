@@ -2,7 +2,7 @@
 title: How To Create Github Pages with Hexo
 date: 2018-07-11 01:13:40
 tags:
-summery: 使用github pages  +  Hexo themes快速搭建简介漂亮的个人blog，绑定域名，以及自定义模板。
+summery: 使用github pages  +  Hexo themes快速搭建简洁漂亮的个人blog，绑定域名，以及自定义模板。
 ---
 
 #### Guide
