@@ -2,6 +2,9 @@
 title: Android版本特性及minSDKVersion设置
 date: 2018-07-15 19:47:20
 tags:
+summery: 推荐：minSDKVersion=17; 提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。如果想要减小apk大小，则可用考虑只提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。下面内容是详细分析过程。
+excerpt: 推荐：minSDKVersion=17; 提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。如果想要减小apk大小，则可用考虑只提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。下面内容是详细分析过程。
+
 ---
 
 
