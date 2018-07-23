@@ -173,13 +173,13 @@ should always declare this attribute.
    for(var i=0;i<ths.length;i++){
        var myth = ths[i];
        if(i==0){//文档中的第一个th的宽度
-           myth.style.width = "80px";
+           myth.style.width = "90px";
        }
        if(i==1){
            myth.style.width = "150px";
        }
        if(i==2){
-           myth.style.width = "70px";
+           myth.style.width = "80px";
        }
        if(i==3){
            myth.style.width = "160px";
