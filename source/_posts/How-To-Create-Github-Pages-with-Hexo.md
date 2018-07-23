@@ -73,6 +73,63 @@ more info: [hexo-theme-next]
 
 [Resize-Image]
 
+##### 设置markdown表格的宽度
+
+[markdown 表格宽度设置]
+
+[markdown 单元格宽度]
+
+##### 在Markdown中使用css style
+
+```css
+<style>
+
+table th{
+	background: #ddd
+}
+
+table th:nth-child(1) {
+    width: 100px;
+}
+
+table th:nth-child(2) {
+    width: 150px;
+}
+
+table th:nth-child(3) {
+    width: 50px;
+}
+
+table th:nth-child(4) {
+    width: 160px;
+}
+</style>
+```
+
+##### 在markdown中使用javascript [需要将javascript代码放在文档末尾]
+
+```javascript
+<script>
+   var ths = document.getElementsByTagName("th");
+   for(var i=0;i<ths.length;i++){
+       var myth = ths[i];
+       if(i==0){//设置文档中的第一个th的宽度
+           myth.style.width = "80px";
+       }
+       if(i==1){
+           myth.style.width = "150px";
+       }
+       if(i==2){
+           myth.style.width = "70px";
+       }
+       if(i==3){
+           myth.style.width = "150px";
+       }       
+   }
+   //alert(document.getElementsByTagName("table").length);
+   	
+</script>
+```
 #### 超链接
 
 [github-help-all]:https://help.github.com/
@@ -83,3 +140,28 @@ more info: [hexo-theme-next]
 [add comments]:https://widgetpack.com/
 [highlightjs]:https://highlightjs.org/
 [Resize-Image]:https://support.typora.io/Resize-Image/
+[markdown 表格宽度设置]:https://blog.csdn.net/maxsky/article/details/54666998
+[markdown 单元格宽度]:https://blog.csdn.net/liuyan19891230/article/details/52839788
+
+
+<script>
+   
+   var ths = document.getElementsByTagName("th");
+   for(var i=0;i<ths.length;i++){
+       var myth = ths[i];
+       if(i==0){//文档中的第一个th的宽度
+           myth.style.width = "80px";
+       }
+       if(i==1){
+           myth.style.width = "150px";
+       }
+       if(i==2){
+           myth.style.width = "70px";
+       }
+       if(i==3){
+           myth.style.width = "150px";
+       }       
+   }
+   //alert(document.getElementsByTagName("table").length);
+   	
+</script>

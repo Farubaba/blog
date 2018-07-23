@@ -7,7 +7,6 @@ excerpt: 推荐：minSDKVersion=17; 提供一套 xxhdpi （UI设计按：1080x19
 
 ---
 
-
 * 推荐：minSDKVersion=17 
 * 推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。  
 * 如果想要减小apk大小：推荐：提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。		
@@ -29,6 +28,7 @@ should always declare this attribute.
 
 
 ### 二、Android系统版本特性
+
 |系统版本号|版本名称sdkVersion|Revision|版本特性|关键特性|
 |-----|-----|-----|----|----|
 ||27|1|||
@@ -52,6 +52,7 @@ should always declare this attribute.
 |2.3|9 Gingerbread|2|[android-2.3]||
 |2.2|8 Froyo |3|[android-2.2]||
 |2.1|7 Eclair |3|[android-2.1]|...|
+
 
 ### 三、Android各系统版本占有率分布
 
@@ -165,3 +166,24 @@ should always declare this attribute.
 [android-2.1]:https://developer.android.com/about/versions/android-2.1.html
 [android-support-library-232]:https://android-developers.googleblog.com/2016/02/android-support-library-232.html
 [Vector Drawable 中文]:http://www.jb51.net/article/84613.htm
+
+<script>
+   
+   var ths = document.getElementsByTagName("th");
+   for(var i=0;i<ths.length;i++){
+       var myth = ths[i];
+       if(i==0){//文档中的第一个th的宽度
+           myth.style.width = "80px";
+       }
+       if(i==1){
+           myth.style.width = "150px";
+       }
+       if(i==2){
+           myth.style.width = "70px";
+       }
+       if(i==3){
+           myth.style.width = "160px";
+       }       
+   }
+      	
+</script>
