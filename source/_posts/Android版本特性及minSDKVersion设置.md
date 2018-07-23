@@ -8,26 +8,24 @@ excerpt: 推荐：minSDKVersion=17; 提供一套 xxhdpi （UI设计按：1080x19
 ---
 
 
-		推荐：minSDKVersion=17 
-		推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。
-      
-        如果想要减小apk大小：
-        推荐：提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。		
-        
-		下面内容是详细分析过程。
+* 推荐：minSDKVersion=17 
+* 推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。  
+* 如果想要减小apk大小：推荐：提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。		
+    
+
 		
 		
 ### 一、参考资料
-[Android dashboards]  
 
-		minSDKVersion理解:
-		An integer designating the minimum API Level required for the application to run. 
-		The Android system will prevent the user from installing the application if the 
-		system's API Level is lower than the value specified in this attribute. You 
-		should always declare this attribute.
+理解minSDKVersion : [Android dashboards] 
+> * An integer designating the minimum API Level required for the application to run. 
+The Android system will prevent the user from installing the application if the 
+system's API Level is lower than the value specified in this attribute. You 
+should always declare this attribute.
+> * 应用程序运行所需要的最小api版本，如果手机的系统版本低于app设置的minSDKVersion，
+那么android系统会阻止app安装。始终应该设置minSDKVersion。
 
-		应用程序运行所需要的最小api版本，如果手机的系统版本低于app设置的minSDKVersion，
-		那么android系统会阻止app安装。始终应该设置minSDKVersion。
+
 
 
 ### 二、Android系统版本特性
@@ -57,18 +55,18 @@ excerpt: 推荐：minSDKVersion=17; 提供一套 xxhdpi （UI设计按：1080x19
 
 ### 三、Android各系统版本占有率分布
 
-#### 1、实时数据参考：[Android dashboards]    
+1、实时数据参考：[Android dashboards]    
 
 
 ![Android Platform Version Percent](http://upload-images.jianshu.io/upload_images/6322932-b814708f69f28120.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### 2、Android Studio中创建项目时提供参考数据    
+2、Android Studio中创建项目时提供参考数据    
 
 ![Android系统版本分布](http://upload-images.jianshu.io/upload_images/6322932-6a2811470cd8a4ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ### 四、Android现有设备屏幕密度分布
-#### 1、实时数据参考：[Android dashboards]  
+1、实时数据参考：[Android dashboards]  
 
 ![Android现有设备屏幕密度分布](http://upload-images.jianshu.io/upload_images/6322932-3c5ac8a7f5a19fc0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -111,22 +109,24 @@ excerpt: 推荐：minSDKVersion=17; 提供一套 xxhdpi （UI设计按：1080x19
 
 ### 八、结论
 
-#### 1、设置minSDKVersion=17
+1、设置minSDKVersion=17
 
-1. Android 4.2及以上版本已经覆盖96%的机型。
+>1. Android 4.2及以上版本已经覆盖96%的机型。
 2. 微信采用minSDKVersion=17，最小支持到android 4.2版本，我们有理由设想，使用我们应用的用户，一定会使用微信，所以和微信采用相同minSDKVersion即可。
-3. 支付宝minSDKVersion=18，携程minSDKVersion=19，我们采用17不会有问题。
+3. 支付宝minSDKVersion=18，携程minSDKVersion=19，我们采用17不会有问题。   
 
-#### 2、图片适配屏幕密度xhdpi
+	
+2、图片适配屏幕密度xhdpi或者xxhdpi
 
-1. 大部分的设备属于xhdpi屏幕密度范围,xxhdpi设备也有相当保有量。
+
+>1. 大部分的设备属于xhdpi屏幕密度范围,xxhdpi设备也有相当保有量。
 2. 分辨率太低的图片，在高密度设备下会被放大儿变模糊，hdpi中的图片会在xhdpi和xxhdpi设备中变得模糊，所以不采用hdpi来适配。
 3. 分辨率太高的图片，android系统缩放时消耗过多内存，例如xxhdpi中的图片再xhdpi和hdpi设备上，会被缩小，分辨率越高，占用内存越多，所以也不适合使用xxhdpi来适配。
 4. 大部分的设备属于xhdpi屏幕密度范围，我们只提供xhdpi一套图片即可完成图片适配。这样在面对hdpi和xxhdpi的设备时候，性能和显示清晰度都可以做到不错。
 
-<font color="red">推荐：minSDKVersion = 17</font></br>
-<font color="red">推荐：想要缩小apk 体积，则提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。</font>
-<font color="red">官方推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。如下图
+<font color="#f97352">推荐：minSDKVersion = 17</font></br>
+<font color="#f97352">推荐：想要缩小apk 体积，则提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。</font>
+<font color="#f97352">官方推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。如下图
 </font>
 ![图片适配xxhdpi](http://upload-images.jianshu.io/upload_images/6322932-89d993c158f0125b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

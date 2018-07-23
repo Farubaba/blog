@@ -65,6 +65,10 @@ more info: [hexo-theme-next]
 
 [add comments]
 
+##### Highlight 高亮显示code代码
+使用[highlightjs]来替换掉hexo自带的highlight功能
+[highlightjs]
+
 #### 超链接
 
 [github-help-all]:https://help.github.com/
@@ -73,3 +77,4 @@ more info: [hexo-theme-next]
 [customizing-github-pages]:https://help.github.com/categories/customizing-github-pages/
 [hexo-theme-next]:https://github.com/iissnan/hexo-theme-next
 [add comments]:https://widgetpack.com/
+[highlightjs]:https://highlightjs.org/

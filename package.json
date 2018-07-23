@@ -24,6 +24,7 @@
     "hexo-server": "^0.2.0",
     "hexo-tag-bootstrap": "^0.1.2",
     "hexo-tag-fontawesome": "^1.0.0",
+    "highlight.js": "^9.12.0",
     "markdown-it-emoji": "^1.4.0",
     "twemoji": "^11.0.0"
   }
