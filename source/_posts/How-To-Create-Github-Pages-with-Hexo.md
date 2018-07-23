@@ -69,6 +69,10 @@ more info: [hexo-theme-next]
 使用[highlightjs]来替换掉hexo自带的highlight功能
 [highlightjs]
 
+##### 设置Markdown文件中图片的位置和大小
+
+[Resize-Image]
+
 #### 超链接
 
 [github-help-all]:https://help.github.com/
@@ -78,3 +82,4 @@ more info: [hexo-theme-next]
 [hexo-theme-next]:https://github.com/iissnan/hexo-theme-next
 [add comments]:https://widgetpack.com/
 [highlightjs]:https://highlightjs.org/
+[Resize-Image]:https://support.typora.io/Resize-Image/

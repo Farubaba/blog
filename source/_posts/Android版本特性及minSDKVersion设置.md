@@ -57,18 +57,24 @@ should always declare this attribute.
 
 1、实时数据参考：[Android dashboards]    
 
+<div align="center">
+<img src="http://upload-images.jianshu.io/upload_images/6322932-b814708f69f28120.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="90%" />
+</div>
 
-![Android Platform Version Percent](http://upload-images.jianshu.io/upload_images/6322932-b814708f69f28120.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 2、Android Studio中创建项目时提供参考数据    
 
-![Android系统版本分布](http://upload-images.jianshu.io/upload_images/6322932-6a2811470cd8a4ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<div align="center">
+<img src="http://upload-images.jianshu.io/upload_images/6322932-6a2811470cd8a4ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="90%" />
+</div>
 
 
 ### 四、Android现有设备屏幕密度分布
 1、实时数据参考：[Android dashboards]  
 
-![Android现有设备屏幕密度分布](http://upload-images.jianshu.io/upload_images/6322932-3c5ac8a7f5a19fc0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<div align="center">
+<img src="http://upload-images.jianshu.io/upload_images/6322932-3c5ac8a7f5a19fc0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="90%" />
+</div>
 
 
 ### 五、Android屏幕密度及代表分辨率
@@ -83,10 +89,12 @@ should always declare this attribute.
 
 ### 六、OpenGL 版本支持
 
-![OpenGL版本支持](http://upload-images.jianshu.io/upload_images/6322932-fb082a2bb4321371.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+<div align="center">
+<img src="http://upload-images.jianshu.io/upload_images/6322932-fb082a2bb4321371.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="90%" />
+</div>
 
 ### 七、主流App支持minSdkVersion
+
 |应用|Andriod最低版本|minSdkVersion|统计日期|
 |----|----|----|----|
 |携程|4.4.4|<font color="red">19</font>|2018-02-11|
@@ -128,7 +136,10 @@ should always declare this attribute.
 <font color="#f97352">推荐：想要缩小apk 体积，则提供一套 xhdpi （UI设计按：720x1080设计）图片来做大部分图片缩放适配。</font>
 <font color="#f97352">官方推荐：提供一套 xxhdpi （UI设计按：1080x1920设计）图片来做大部分图片缩放适配。如下图
 </font>
-![图片适配xxhdpi](http://upload-images.jianshu.io/upload_images/6322932-89d993c158f0125b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+<div align="center">
+<img src="http://upload-images.jianshu.io/upload_images/6322932-89d993c158f0125b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="90%" />
+</div>
 
 [Vector Drawable 中文]
 
