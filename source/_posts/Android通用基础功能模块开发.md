@@ -1,5 +1,5 @@
 ---
-title: android通用功能基础模块开发.md
+title: android通用功能基础模块开发
 date: 2018-07-24 10:55:39
 tags: android view  
 summery: 
