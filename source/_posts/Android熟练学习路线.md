@@ -4,6 +4,11 @@ date: 2018-08-01 20:47:20
 tags: [android,架构,Kotlin,RxJava,Retrofit,组件化,插件化,热更新,持续集成,设计模式,设计原则]
 summery: 集合当下已经非常流行和完善的各种第三方开发库，搭建快速，高效，稳定的Android基础框架系统，避免重复制造轮子，提高开发效率。文中将涉及到OkHttp、Retrofit、RxJava、Kotlin、MVP等相关知识。
 ---
+#### 参考资料
+
+[高级Android开发强化实战]
+
+[Google IO 合集]
 
 ### 一、面向对象设计原则
 
@@ -55,6 +60,9 @@ summery: 集合当下已经非常流行和完善的各种第三方开发库，�
 
 1. [ConstraintLayout]
 2. [RecyclerView]
+3. [CoordinatorLayout]
+4. [AppBarLayout]
+5. [CollapsingToolbarLayout]
 3. [WebView]
 4. [ViewPager]
 7. [Bitmap]
@@ -119,6 +127,12 @@ summery: 集合当下已经非常流行和完善的各种第三方开发库，�
 4. [灰度发布]
 
 ### 十、设计模式
+
+
+[高级Android开发强化实战]:https://www.jianshu.com/p/0ce30c6703a1
+[Google IO 合集]:https://www.jianshu.com/p/99f8423088a3
+
+[CoordinatorLayout]:https://www.jianshu.com/p/f09723b7e887/
 
 
 
