@@ -10,6 +10,8 @@ summery: 在myeclipse中使用Group Id = org.apache.maven.archetypes Artifact Id
 
 [Maven权威指南笔记]
 
+[一步一步创建Maven多module项目]
+
 源代码下载地址：[mobile-server]
 
 ### 二、maven webapp目录结构
@@ -189,6 +191,8 @@ pom.xml文件中添加如下内容：
 
 4. 增加dependencyManagement配置
 
+dependencyManagement用于在parent pom中统一管理module的版本version。如下，当child module中依赖struts时候，只需要在dependencies中加入 groupId和artifactId即可，version会自动从parent pom中继承。
+
 ```
 <dependencyManagement>
 	<dependencies>
@@ -272,12 +276,13 @@ pom.xml文件中添加如下内容：
 
 ### 十、根据maven webapp目录结构，补全必要的目录
 
-创建相关代码资源目录和package
+创建相关代码资源目录和package, (创建代码目录时，需要先创建普通目录，然后用eclipse转化成代码目录：build path -> use as source folder)
 
 ```
 src/test/java
 src/test/resource
 src/main/webapp/resources
+src/main/webapp/java
 
 com.farubaba.mobile.server.action
 com.farubaba.mobile.server.service
@@ -393,10 +398,49 @@ String pageName = pageContext.getPage().getClass().getSimpleName();
 
 ### 十三、编写服务端Action、Service、Dao，完整的代码已上传至github [mobile-server]
 
+### 十四、错误修正
+
+1. 可能出现/struts-tags 找不到的错误。
+
+		myeclipse Can not find the tag library descriptor for "/struts- tags"
+	
+		右键project-->build path-->Configure build path-->order and export
+		勾选Maven dependencies ， 点击应用。
+2. web.xml web-app dtd版本错误
+
+		One or more constraints have not been satisfied. Apache Struts (2.x) 2.1 req
+
+web.xml中替换如下内容：
+
+	<!-- <!DOCTYPE web-app PUBLIC
+	 "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+	 "http://java.sun.com/dtd/web-app_2_3.dtd" > -->
+
+替换为：
+
+	<web-app 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://java.sun.com/xml/ns/javaee"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+		version="3.0" id="WebApp_1536392245753">
+		
+3. child module does not exist
+
+<div align="center">
+	<img src="/images/14、maven-child-module-not-exist.png" width="90%" />
+</div>
+
+4. 去掉webapp项目创建时自带的后缀: Maven Webapp , 例如 api-feature Maven Webapp 修改成 api-feature
+	<div align="center">
+	<img src="/images/15、remove-maven-webapp-default-sufix-MavenWebapp" width="90%" />
+</div>
+	
+	
 
 [maven webapp目录结构]:https://www.cnblogs.com/plxx/p/5256979.html
 [Maven权威指南笔记]:Maven权威指南笔记.md
 [mobile-server]:https://github.com/Farubaba/mobile-server.git
+[一步一步创建Maven多module项目]:https://blog.csdn.net/luoxiang183/article/details/76215635
 
 
 

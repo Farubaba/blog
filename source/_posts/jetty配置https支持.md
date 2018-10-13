@@ -6,11 +6,19 @@ summery: 使用jetty xml ioc 为Jetty服务器配置https支持。了解jetty各
 ---
 ### 一、jetty配置https支持
 
+[HTTPS及SSL TLS概述]
+
+[通俗理解HTTPS]
+
 [https握手链接过程详解]
 
 [jetty javadoc for 配置]
 
 [ERR\_SSL\_VERSION\_OR\_CIPHER\_MISMATCH 错误]
+
+[Android Https]
+
+[IBM Java 安全套接字编程以及 keytool 使用最佳实践]
 
 /start.ini  > /etc/jetty-http.xml > /demo-base/start.d/http.ini(只对当前应用有效)
 
@@ -159,5 +167,9 @@ Often a Connector needs to be configured to accept connections from an intermedi
 [jetty-configuring-ssl]:http://www.eclipse.org/jetty/documentation/current/configuring-ssl.html
 [Transport\_Layer\_Security in Web\_browsers]:https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers
 
+[通俗理解HTTPS]:https://www.cnblogs.com/zhangshitong/p/6478721.html
+[Android Https]:https://www.cnblogs.com/alisecurity/p/5939336.html
 
+[IBM Java 安全套接字编程以及 keytool 使用最佳实践]:https://www.ibm.com/developerworks/cn/java/j-lo-socketkeytool/index.html?ca=drs
 
+[HTTPS及SSL TLS概述]:HTTPS及SSL-TLS概述.md
